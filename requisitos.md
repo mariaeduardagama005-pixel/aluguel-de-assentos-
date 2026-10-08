@@ -13,6 +13,7 @@ Tratar senhas de usuários com hash bcript
 O sistema deve ter uma página de históricos e manter sempre os logs de qualquer alteração feita por 
 qualquer usuário, para auditorias futuras.
 até a final, registra o resultado e posições.
+- JHGJHG
  
 
 
