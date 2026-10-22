@@ -13,7 +13,8 @@ Tratar senhas de usuários com hash bcript
 O sistema deve ter uma página de históricos e manter sempre os logs de qualquer alteração feita por 
 qualquer usuário, para auditorias futuras.
 até a final, registra o resultado e posições.
-- JHGJHG
+-Primeiro, o cliente entra no sistema e escolhe a opção de consultar os filmes disponíveis. O sistema mostra os filmes que estão em cartaz, então o cliente escolhe o filme que quer assistir. Depois disso, o sistema apresenta as sessões disponíveis para aquele filme. O cliente escolhe uma sessão e o sistema mostra informações como horário, a sala e o filme escolhido. Assim, o cliente consegue visualizar os dados da sessão e continuar com a compra do ingresso. 
+-Já o gerente tem acesso a parte de administração do cinema. Ele consegue cadastrar e alterar filmes, sessões, salas e preço dos ingressos. O gerente escolhe o que quer organizar, faz as alterações e o sistema salva as informações, deixando tudo atualizado para os clientes.
  
 
 
