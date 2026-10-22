@@ -1,0 +1,158 @@
+/**
+ * ESTILOS CUSTOMIZADOS DO CINEMA & MAPA DE POLTRONAS
+ */
+
+/* Efeito de brilho na tela do cinema */
+.cinema-screen {
+    position: relative;
+    height: 48px;
+    width: 80%;
+    margin: 0 auto 3rem auto;
+    border-top: 5px solid #06b6d4;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    box-shadow: 0 14px 28px -8px rgba(6, 182, 212, 0.45);
+    background: linear-gradient(180deg, rgba(6, 182, 212, 0.22) 0%, rgba(6, 182, 212, 0.0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cinema-screen span {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.25em;
+    color: #94a3b8;
+    text-transform: uppercase;
+}
+
+/* Poltronas do Cinema */
+.seat {
+    width: 32px;
+    height: 30px;
+    border-radius: 8px 8px 4px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+@media (min-width: 640px) {
+    .seat {
+        width: 38px;
+        height: 36px;
+        font-size: 11px;
+    }
+}
+
+/* Estado: Disponível */
+.seat-available {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    color: #cbd5e1;
+}
+
+.seat-available:hover {
+    background-color: #334155;
+    border-color: #64748b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estado: Selecionado */
+.seat-selected {
+    background: linear-gradient(135deg, #e50914, #b91c1c);
+    border: 1px solid #f87171;
+    color: #ffffff;
+    transform: scale(1.08);
+    box-shadow: 0 0 14px rgba(229, 9, 20, 0.6);
+}
+
+/* Estado: Ocupado */
+.seat-occupied {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    color: #475569;
+    cursor: not-allowed;
+    opacity: 0.55;
+}
+
+.seat-occupied:hover {
+    transform: none;
+}
+
+/* Estado: VIP */
+.seat-vip {
+    border-color: #f59e0b;
+}
+
+/* Ingresso / Ticket de Cinema Realista */
+.cinema-ticket {
+    background: #111827;
+    position: relative;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px -15px rgba(0,0,0,0.7);
+    border: 1px solid #374151;
+}
+
+.ticket-divider {
+    position: relative;
+    border-top: 2px dashed #4b5563;
+    margin: 1.5rem -1.5rem;
+}
+
+.ticket-notch-left, .ticket-notch-right {
+    position: absolute;
+    top: -12px;
+    width: 24px;
+    height: 24px;
+    background-color: #070a12;
+    border-radius: 50%;
+}
+
+.ticket-notch-left {
+    left: -12px;
+}
+
+.ticket-notch-right {
+    right: -12px;
+}
+
+/* Cartão de Crédito Interativo */
+.credit-card-preview {
+    perspective: 1000px;
+}
+
+.credit-card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Badges de Classificação Indicativa */
+.badge-class-livre { background-color: #10b981; color: white; }
+.badge-class-10 { background-color: #0284c7; color: white; }
+.badge-class-12 { background-color: #eab308; color: black; }
+.badge-class-14 { background-color: #f97316; color: white; }
+.badge-class-16 { background-color: #dc2626; color: white; }
+.badge-class-18 { background-color: #000000; color: white; border: 1px solid #4b5563; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0c111d;
+}
+::-webkit-scrollbar-thumb {
+    background: #1f2b45;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+}
